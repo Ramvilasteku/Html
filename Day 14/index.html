@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forms</title>
+</head>
+
+<body bgcolor="gray">
+  <center>
+    <h1>Club Membership Registration</h1>
+
+    <hr />
+  </center>
+
+  <form action="submit.html">
+    <!-- action = that it is used to wher the user data should be send
+     method = in this we have two types get & post 
+     get = enterd data will been show in the url
+     post = enterd data will not been show in the url-->
+    <fieldset style="border: 2px solid black">
+      <legend>
+        <h4>Complete the form below to sign up for our membership service</h4>
+      </legend>
+      <h4>
+        <label for="Name">Name:</label><br />
+        <input type="text" name="name" placeholder="First Name" />&nbsp;&nbsp;
+        <input type="text" name="name" placeholder="Last Name" />
+        <br /><br />
+        <label for="Email">E Mail:</label><br />
+        <input type="email" name="mail" id="" placeholder="Email" />&nbsp;&nbsp;<br /><br />
+        <label for="phone">Phone:</label><br />
+        <input type="number" name="Phone" placeholder="Your Number" />
+        <br /><br />
+        <label for="Address">Address:</label><br />
+        <input type="text" name="Address" id="" placeholder="Street Address 1" />
+        &nbsp;
+        <input type="text" name="Address" id="" placeholder="Street Address 2" />
+        <br /><br />
+        <input type="text" name="City" id="" placeholder="City" /> &nbsp;
+        <input type="text" name="State" id="" placeholder="State" />
+        <br /><br />
+        <input type="text" name="Postsl" id="" placeholder="Postal / Zip Code" />
+        &nbsp;
+        <input type="text" name="Country" id="" placeholder="Country" />
+        <br /><br />
+        <label for="Birth date">Birth Date:</label>
+        <input type="date" name="bate" id="" />
+        <br /><br />
+        <h4>Where did you hear about us?</h4>
+        <!--check box 
+value = here user can not give data thats why we will provide in the for of value
+name = when the user submit the data we want to know which data it is that why we uses the name  -->
+        <input type="checkbox" name="Google" value="Google" />
+        <label for="Google">Google</label><br />
+        <input type="checkbox" name="facebook" value="google" />
+        <label for="facebook">Facebook</label><br />
+        <input type="checkbox" name="google" value="google" />
+        <label for="instagram">instagram</label><br />
+        <input type="checkbox" name="google" value="google" />
+        <label for="other">Other</label><br />
+
+        <h4>Membership Type</h4>
+        <!-- value = here user can not give data thats why we will provide in the for of value
+name  here user can only sele any one of the option for that we have to give same name for all name tag so that the user can select only one option from multipule-->
+        <input type="radio" name="Type" value="standard" />
+        <label for="Standard">Standard</label><br />
+        <input type="radio" name="Type" value="Ultimate" />
+        <label for="Premium">Premium</label><br />
+        <input type="radio" name="Type" value="Ultimate" />
+        <label for="Ultimate">Ultimate</label><br />
+        <br /><br />
+        <!-- in submit or reset 
+ we can change the name by giving value = some it show the submit button some only not show the submit title  -->
+        <center>
+          <input type="submit" /> &nbsp; &nbsp;
+          <input type="reset" name="" id="" value="re enter" />
+        </center>
+      </h4>
+    </fieldset>
+  </form>
+</body>
+</html>
